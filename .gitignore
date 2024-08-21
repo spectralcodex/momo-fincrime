@@ -28,5 +28,8 @@ hs_err_pid*
 .classpath
 .project
 
+# OS generated files
+.DS_Store
+
 # Default output folder
 outputs/
