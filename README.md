@@ -4,7 +4,7 @@
 
 ###  About Dataset
 
-### Context
+#### Context
 
 PaySim simulates mobile money transactions based on a sample of real transactions extracted from one month of financial logs from a mobile money service implemented in an African country. The original logs were provided by a multinational company, who is the provider of the mobile financial service which is currently running in more than 14 countries all around the world.
 
@@ -12,7 +12,7 @@ This synthetic dataset is scaled down 1/4 of the original dataset and it is crea
 
 NOTE: Transactions which are detected as fraud are cancelled, so for fraud detection these columns (oldbalanceOrg, newbalanceOrig, oldbalanceDest, newbalanceDest ) must not be used.
 
-### Headers
+#### Headers
 
 This is a sample of 1 row with headers explanation:
 
@@ -41,5 +41,5 @@ isFraud - This is the transactions made by the fraudulent agents inside the simu
 
 isFlaggedFraud - The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction.
 
-PaySim Source repository by Dr. Edgar Lopez-Rojas (http://edgarlopez.net)
+#### PaySim Repository
 https://github.com/EdgarLopezPhD/PaySim
