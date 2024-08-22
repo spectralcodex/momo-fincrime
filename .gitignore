@@ -27,9 +27,12 @@ hs_err_pid*
 .idea/
 .classpath
 .project
+*.code-workspace
 
 # OS generated files
 .DS_Store
 
-# Default output folder
+# output folders
 outputs/
+
+momo-fincrime.code-workspace
