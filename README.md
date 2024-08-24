@@ -18,28 +18,42 @@ This is a sample of 1 row with headers explanation:
 
 1,PAYMENT,1060.31,C429214117,1089.0,28.69,M1591654462,0.0,0.0,0,0
 
-step - maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation).
 
-type - CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER.
+The dataset contains the following attributes:
 
-amount -
-amount of the transaction in local currency.
+* **step:** This is a unit of time representing one hour in the real world. The total number of steps is 744, corresponding to a 30-day simulation.
 
-nameOrig - customer who started the transaction
+* **type:** The type of transaction performed. The possible types are *CASH-IN*, *CASH-OUT*, *DEBIT*, *PAYMENT*, and *TRANSFER*.
 
-oldbalanceOrg - initial balance before the transaction
+#### About type of transactions
+* CASH-IN: Refers to depositing cash into an account (adding funds).
 
-newbalanceOrig - new balance after the transaction.
+* CASH-OUT: Refers to withdrawing cash from an account (removing funds).
 
-nameDest - customer who is the recipient of the transaction
+* DEBIT: It refer to a decrease in the balance of a financial account due to a withdrawal or an expense.
 
-oldbalanceDest - initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants).
+* PAYMENT: Refers to the transfer of money from one party (payer) to another (payee) in exchange for goods, services, or as settlement of a debt.
 
-newbalanceDest - new balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants).
+* TRANSFER: Refers to moving money from one account to another, often between accounts held by the same person or entity.
 
-isFraud - This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system.
 
-isFlaggedFraud - The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction.
+* **amount:** The transaction amount in your preferred local currency (£ in my case).
+
+* **nameOrig:** The customer who initiated the transaction.
+
+* **oldBalanceOrig:** The initial balance of the customer before the transaction.
+
+* **newBalanceOrig:** The new balance of the customer after the transaction.
+
+* **nameDest:** The recipient of the transaction.
+
+* **oldBalanceDest:** The initial balance of the recipient before the transaction. There is no information for customers whose names start with "M" (merchants).
+
+* **newBalanceDest:** The new balance of the recipient after the transaction. As with "oldbalanceDest," there is no information for customers whose names start with "M." (merchants)
+
+* **isFraud:** Indicates whether a transaction is fraudulent.
+
+* **isFlaggedFraud:** Flags transactions that exceed a certain threshold. In this dataset, transfers over 200,000 in a single transaction are flagged as potentially fraudulent.
 
 #### PaySim Repository
 https://github.com/EdgarLopezPhD/PaySim
