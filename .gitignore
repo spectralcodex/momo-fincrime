@@ -35,4 +35,6 @@ hs_err_pid*
 # output folders
 outputs/
 
-momo-fincrime.code-workspace
+# Python virtual environment
+.venv
+
